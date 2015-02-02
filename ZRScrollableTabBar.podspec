@@ -10,9 +10,10 @@
 Pod::Spec.new do |s|
   s.name             = "ZRScrollableTabBar"
   s.version          = "0.1.0"
-  s.summary          = "Normally tabbar shows more tab if there is more then 5 tab in a tab bar controller. To overcome this problem you can use ZRScrollableTabBar which will allow you to put as many tab as you want and they are scrollable"
+  s.summary          = "ZRScrollableTabBar is a native tab bar with unlimited items without more button."
+  s.description      = "Normally tabbar shows more tab if there is more then 5 tab in a tab bar controller. To overcome this problem you can use ZRScrollableTabBar which will allow you to put as many tab as you want and they are scrollable"
   s.homepage         = "https://github.com/raihan/ZRScrollableTabBar"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  # s.screenshots     = "https://github.com/raihan/ZRScrollableTabBar/blob/master/Example/ZRScrollableTabBar/Screenshot1.png", "https://github.com/raihan/ZRScrollableTabBar/blob/master/Example/ZRScrollableTabBar/Screenshot2.png", "https://github.com/raihan/ZRScrollableTabBar/blob/master/Example/ZRScrollableTabBar/Screenshot3.png"
   s.license          = 'MIT'
   s.author           = { "raihan" => "raihan.zbr@gmail.com" }
   s.source           = { :git => "https://github.com/raihan/ZRScrollableTabBar.git", :tag => s.version.to_s }

@@ -8,7 +8,7 @@
 
 #import "ZRScrollableTabBar.h"
 
-#define ButtonNoPerTab 4.0
+#define ButtonNoPerTab 5.0
 #define TabHeight 49.0
 #define TabWidth [[UIScreen mainScreen] bounds].size.width-20
 

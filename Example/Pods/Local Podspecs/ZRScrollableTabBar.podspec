@@ -10,19 +10,14 @@
 Pod::Spec.new do |s|
   s.name             = "ZRScrollableTabBar"
   s.version          = "0.1.0"
-  s.summary          = "A short description of ZRScrollableTabBar."
-  s.description      = <<-DESC
-                       An optional longer description of ZRScrollableTabBar
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/ZRScrollableTabBar"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "ZRScrollableTabBar is a native tab bar with unlimited items without more button."
+  s.description      = "Normally tabbar shows more tab if there is more then 5 tab in a tab bar controller. To overcome this problem you can use ZRScrollableTabBar which will allow you to put as many tab as you want and they are scrollable"
+  s.homepage         = "https://github.com/raihan/ZRScrollableTabBar"
+  # s.screenshots     = "https://github.com/raihan/ZRScrollableTabBar/blob/master/Example/ZRScrollableTabBar/Screenshot1.png", "https://github.com/raihan/ZRScrollableTabBar/blob/master/Example/ZRScrollableTabBar/Screenshot2.png", "https://github.com/raihan/ZRScrollableTabBar/blob/master/Example/ZRScrollableTabBar/Screenshot3.png"
   s.license          = 'MIT'
   s.author           = { "raihan" => "raihan.zbr@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/ZRScrollableTabBar.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/raihan/ZRScrollableTabBar.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/raihan49','https://www.facebook.com/raihan.zbr'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -33,6 +28,5 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # s.frameworks = 'UIKit'
 end
