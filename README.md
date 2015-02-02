@@ -5,6 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/ZRScrollableTabBar.svg?style=flat)](http://cocoadocs.org/docsets/ZRScrollableTabBar)
 [![Platform](https://img.shields.io/cocoapods/p/ZRScrollableTabBar.svg?style=flat)](http://cocoadocs.org/docsets/ZRScrollableTabBar)
 
+Normally tabbar shows more tab if there is more then 5 tab in a tab bar controller. To overcome this problem you can use ZRScrollableTabBar which will allow you to put as many tab as you want and they are scrollable
+
+**Sample screenshots**
+<img src="https://github.com/raihan/ZRScrollableTabBar/blob/master/Example/ZRScrollableTabBar/Screenshot1.png" width="200" />
+<img src="https://github.com/raihan/ZRScrollableTabBar/blob/master/Example/ZRScrollableTabBar/Screenshot2.png" width="200" />
+<img src="https://github.com/raihan/ZRScrollableTabBar/blob/master/Example/ZRScrollableTabBar/Screenshot3.png" width="200" />
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
