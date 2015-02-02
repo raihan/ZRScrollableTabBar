@@ -1,0 +1,14 @@
+PODS:
+  - ZRScrollableTabBar (0.1.0)
+
+DEPENDENCIES:
+  - ZRScrollableTabBar (from `../`)
+
+EXTERNAL SOURCES:
+  ZRScrollableTabBar:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZRScrollableTabBar: de274d1df522e3053c5a8b19d0e9c40e83365c9d
+
+COCOAPODS: 0.35.0
