@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ZRScrollableTabBar"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "ZRScrollableTabBar is a native tab bar with unlimited items without more button."
   s.description      = "Normally tabbar shows more tab if there is more then 5 tab in a tab bar controller. To overcome this problem you can use ZRScrollableTabBar which will allow you to put as many tab as you want and they are scrollable"
   s.homepage         = "https://github.com/raihan/ZRScrollableTabBar"
