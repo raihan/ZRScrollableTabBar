@@ -26,7 +26,8 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'ZRScrollableTabBar' => ['ZRScrollableTabBar/Resources/*.png']
   }
+    spec.ios.resource_bundle = { 'ZRScrollableTabBar' => 'ZRScrollableTabBar/Resources/*.png' }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+    # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit'
 end
