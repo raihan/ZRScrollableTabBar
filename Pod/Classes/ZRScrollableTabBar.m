@@ -52,7 +52,7 @@
         tabScrollView.delegate = self;
         tabScrollView.showsHorizontalScrollIndicator = NO;
         tabScrollView.bounces = NO;
-
+        
         self.tabBars = [[NSMutableArray alloc] init];
         
         float x = 0.0;
@@ -126,19 +126,20 @@
 }
 
 - (BOOL)scrollToTabBarWithTag:(int)tag animated:(BOOL)animated {
+    
     for (UITabBar *tabBar in self.tabBars)
-        if ([self.tabBars indexOfObject:tabBar] == tag) {
-            UITabBar *tabBar = [self.tabBars objectAtIndex:tag];
-            
-            [tabScrollView scrollRectToVisible:tabBar.frame animated:animated];
-            
-            if (animated == NO)
-                [self scrollViewDidEndDecelerating:tabScrollView];
-            
-            return YES;
-        }
+        for (UITabBarItem *item in tabBar.items)
+            if (item.tag == tag) {
+                tabBar.selectedItem = item;
+                
+                [tabScrollView scrollRectToVisible:tabBar.frame animated:animated];
+                [self tabBar:tabBar didSelectItem:item];
+                
+                return YES;
+            }
     
     return NO;
+    
 }
 
 - (BOOL)selectItemWithTag:(int)tag {
@@ -178,7 +179,7 @@
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-
+    
 }
 
 -(void)scrollToPage:(int)page animation:(BOOL)animated

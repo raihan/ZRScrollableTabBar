@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		204409781A800CD4006FF81A /* ZRScrollableTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 204409771A800CD4006FF81A /* ZRScrollableTabBar.m */; };
 		2044097B1A800CE2006FF81A /* arrrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 204409791A800CE2006FF81A /* arrrow_left.png */; };
 		2044097C1A800CE2006FF81A /* arrrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 2044097A1A800CE2006FF81A /* arrrow_right.png */; };
 		204409811A801442006FF81A /* Screenshot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2044097E1A801442006FF81A /* Screenshot1.png */; };
 		204409821A801442006FF81A /* Screenshot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2044097F1A801442006FF81A /* Screenshot2.png */; };
 		204409831A801442006FF81A /* Screenshot3.png in Resources */ = {isa = PBXBuildFile; fileRef = 204409801A801442006FF81A /* Screenshot3.png */; };
+		207225C61CDE4DCA00553208 /* ZRScrollableTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 204409771A800CD4006FF81A /* ZRScrollableTabBar.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -272,7 +272,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ZR;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = raihan;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -394,9 +394,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207225C61CDE4DCA00553208 /* ZRScrollableTabBar.m in Sources */,
 				6003F59E195388D20070C39A /* ZRAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZRViewController.m in Sources */,
-				204409781A800CD4006FF81A /* ZRScrollableTabBar.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +473,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -536,6 +537,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZRScrollableTabBar/ZRScrollableTabBar-Prefix.pch";
 				INFOPLIST_FILE = "ZRScrollableTabBar/ZRScrollableTabBar-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -550,6 +552,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZRScrollableTabBar/ZRScrollableTabBar-Prefix.pch";
 				INFOPLIST_FILE = "ZRScrollableTabBar/ZRScrollableTabBar-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -572,6 +575,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -591,6 +595,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
