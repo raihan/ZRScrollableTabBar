@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'ZRScrollableTabBar' => ['Pod/Resources/*.png']
+    'ZRScrollableTabBar' => ['ZRScrollableTabBar/Resources/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
